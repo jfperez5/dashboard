@@ -1,0 +1,330 @@
+:root {
+    --primary: #9E213D;
+    --secondaryOficial:#B38E5D;
+    --oficialCrema:#D4C19C;
+    --ColorCampo: #A02042;
+    --light: #fff;
+	--grey: #efefef;
+	--lightRed:rgba(255, 99, 132, 1);
+	--lightBlue:rgba(54, 162, 235, 1)  ;
+	--lightYellow:rgba(255, 206, 86, 1);
+	--lightCian:rgba(75, 192, 192, 1);
+	--lightOrange:rgba(255, 159, 64, 1);
+	--lightPurple:rgba(153, 102, 255, 1);
+	--lightGreen:rgb(144, 238, 144);
+	
+}
+
+@font-face {
+    font-family: "Hermann";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fonts/W Foundry - Hermann Regular.otf") format("woff"), 
+        url("../fonts/W Foundry - Hermann Regular.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fonts/Roboto/Roboto-Light.ttf") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "RobotoBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fonts/Roboto/Roboto-Bold.ttf") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("opentype");
+}
+
+
+body {
+	overflow: hidden;
+	font-family: 'Roboto', 'Mulish', sans-serif !important;
+	font-weight: 300;
+	color: var(--primary);
+	background-image: url("../img/tramadoCtrlEsc.png");
+	background-repeat:repeat;
+}
+
+.RobotoBold{
+    font-family:RobotoBold
+}
+
+.titulo_sistema {
+    font-size: 26px !important;
+    color: white;
+    font-family: RobotoBold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+/*Sobrescritura de Estilos Bootstrap para cambios de color */
+.bg-primary {
+	background-color: var(--primary) !important; 
+} 
+.bg-light {
+	background-color: var(--light) !important; 
+} 
+.bg-mix {
+	background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0); 
+}
+.bg-grey {
+	background-color: var(--grey) !important; 
+} 
+.bg-lightRed{
+	background-color: var(--lightRed) !important; 
+}
+.bg-lightBlue{
+	background-color: var(--lightBlue) !important; 
+}
+.bg-lightYellow{
+	background-color: var(--lightYellow) !important; 
+}
+.bg-lightCian{
+	background-color: var(--lightCian) !important; 
+}
+.bg-lightOrange{
+	background-color: var(--lightOrange) !important; 
+}
+
+.bg-lightPurple{
+	background-color: var(--lightPurple) !important; 
+}
+.bg-lightGreen{
+	background-color: var(--lightGreen) !important; 
+}
+
+.PantoneColor465{
+	color: var(--secondaryOficial) !important;
+}
+
+
+.PantoneColor7421{
+    color:#621132;
+}
+
+.PantoneColor7420{
+    color:#9D2449 !important;
+}
+.PantoneColor627{
+    color:#13322B !important;
+}
+
+.PantoneColor626{
+    color:#285C4D !important;
+}
+
+.PantoneColor504{
+    color:#4E232E !important;
+}
+
+.PantoneColor490{
+    color:#56242A !important;
+}
+.PantoneColor465{
+    color:#B38E5D !important;
+}
+
+.PantoneColor468{
+    color:#D4C19C !important;
+}
+
+/*.row{
+    margin-top: 7px !important;
+}*/
+
+
+.cancelado{
+    color:red !important;
+    font-weight: bold;
+}
+
+
+.titulo_registro {
+    color: white !important;
+    font-family: RobotoBold;
+    background-color: #9D2449 !important;
+    display: block;
+    padding: 10px 10px 10px 10px !important;
+    text-decoration: none !important;
+}
+
+#div_aspirante{
+    border: 2px solid #9d2449;
+    padding: 10px 10px 10px 10px;
+}
+
+#div_tutor{
+    border: 2px solid #9d2449;
+    padding: 10px 10px 10px 10px;
+}
+
+#div_escuelas_preferencia{
+    border: 2px solid #9d2449;
+    padding: 10px 10px 10px 10px;
+}
+
+.bgVinoDark{    
+    background-color:#621132 !important;
+}
+
+.bgVinoLigth{
+    background-color: #9D2449 !important;
+}
+
+.bgCremaDark{
+    background-color: #B38E5D !important;
+}
+
+.bgCremaLigth{
+    background-color:#D4C19C !important;
+}
+
+.btnCremaDark{    
+    background-color: #B38E5D !important;
+    color:white !important;
+    font-family: OpenSansRegular !important;
+}
+
+.btnCremaDark:hover{    
+    background-color: #D4C19C !important;        
+}
+
+.btnVerdeDark{
+    background-color: #13322B !important;
+    color:white !important;
+    font-family: OpenSansRegular !important;
+}
+
+.btnVerdeLigth{
+    background-color: #285C4D !important;
+    color:white !important; 
+    font-family: OpenSansRegular !important;
+}
+
+.btnVerdeLigth:hover{
+    background-color: gray !important;
+    color:white !important;    
+}
+
+.Pantone7421ColorVinoDark{    
+    color:#621132;
+}
+
+.Pantone7421ColorVinoLigth{
+    color:#9D2449;
+}
+
+.Pantone7421ColorVerdeDark{
+    color: #13322B;
+}
+
+.Pantone7421ColorVerdeLigth{
+    color:#285C4D;
+}
+
+.bgVerdeDark{
+    background-color: #13322B;
+}
+
+.bgVerdeLigth{
+    background-color:#285C4D;
+}
+
+.Pantone7421ColorCafeLigth{
+    color:#56242A;
+}
+
+.Pantone7421ColorCremaDark{
+    color: #B38E5D;
+}
+.Pantone7421ColorCremaLigth{
+    color:#D4C19C;
+}
+
+
+.btn {
+	border: 0;
+}
+.btn-primary {
+	background-color: var(--primary) !important; 
+} 
+
+.btn-oficialcrema {
+    /* background-color: var(--oficialCrema) !important;  */
+    color:#fff !important;
+    /* background: transparent !important; */
+}
+
+.btn-primary:hover {
+	background-color: var(--primary) !important; 
+} 
+.nav-color-oficial{
+    background-color: var(--secondaryOficial) !important;
+    color:#fff !important;
+}
+
+#sidebar-container {
+  min-height: 100vh;
+  margin-left: -18rem;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1); 
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-container .logo{
+  padding: 0;
+}
+
+#sidebar-container .menu {
+  width: 18rem;
+  padding-left: 1rem;
+}
+
+#content-wrapper.toggled #sidebar-container {
+  margin-left: 0;
+}
+
+
+.btn-search {
+	right: 0;
+}
+
+.avatar{
+	max-width: 35px;
+}
+
+#content {
+	overflow-y: auto;
+	height: 100vh;
+	padding-bottom: 5rem;
+}
+
+
+.stat{
+	border-right:1px solid var(--grey);
+}
+
+@media (min-width: 768px) {
+  #sidebar-container {
+    margin-left: 0;
+  }
+  #content-wrapper.toggled #sidebar-container {
+    margin-left: -18rem;
+  }
+}
+
+@media(max-width: 768px){
+	.star{
+		border:0;
+	}
+}
+
