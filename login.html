@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16 24x24 36x36 48x48">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico" sizes="16x16 24x24 36x36 48x48">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/btrap4/css/bootstrap.min.css" >
+    <!-- CSS personalizados -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos_sidebar.css">
+    <!-- CSS iconos -->
+    <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
+    <!-- ionicons CSS-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/DataTables/css/jquery.dataTables.min.css"/>
+    <!-- alertify CSS -->
+    <link rel="stylesheet" href="assets/alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="assets/alertifyjs/css/themes/default.css">
+    
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Roboto:ital,wght@0,100;0,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="assets/jQuery/js/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="assets/JQuery/jquery-3.4.1.js"></script>  -->
+    <script src="assets/jQuery/js/popper.min.js"></script>
+    <script src="assets/btrap4/js/bootstrap.min.js"></script>
+    <!-- DataTables Js -->
+    <script type="text/javascript" src="assets/DataTables/datatables.js"></script>
+    <!-- alertify Js -->
+    <script src="assets/alertifyjs/alertify.js"></script>
+    <!-- fontawesome Js -->
+    <script src="assets/fontawesome/js/all.js"></script> <!--  FONTAWESOME para usar los iconos -->
+    <!-- ionicons JS-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- chart JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+
+
+    <title>SETAB</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom py-0">
+            <div class="container-fluid px-md-5 py-0 d-flex justify-content-center d-md-block">
+              <div class="logo">
+                    <img src="assets/img/SETAB_ROJO.png" alt="SECRETARÍA DE EDUCACIÓN" class="img-fluid" width="230">
+                </div>  
+            </div> <!-- fin container -->
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-color-oficial px-md-5">
+            <div class="container-fluid px-md-5 py-0 d-flex justify-content-center d-md-block">
+                <h5 class="h5-responsive d-none d-sm-block RobotoBold ">  Control de Personal  </h5>
+                <a class="navbar-brand d-block d-sm-none RobotoBold" href="#"> Control de Personal </a>
+            </div>
+        </nav>
+
+        <!-- FORM LOGIN -->
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-6 mx-2 mx-md-auto p-0 bg-white">
+                    <div class="logo text-center my-3">
+                        <div class="m-0">
+                            <h3 class="h3-responsive font-weight-normal RobotoBold">INGRESAR</h3>   
+                        </div>
+                        <div class="alert alert-warning m-0 px-0">
+                            <p class="RobotoBold mb-0" style="font-size:15px;">
+                                PARA INGRESAR PROPORCIONE LA SIGUIENTE INFORMACIÓN
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="px-4 px-md-5">
+                        <form action="#" name="login">
+                            <div class="form-label-group">                             
+                                <input type="searh" class="form-control" id="usuario" autofocus="true" name="usuario" value="" placeholder="CAPTURE UN CORREO ELECTRÓNICO" required="">                                                            
+                                <label for="lbFolio"> CORREO ELECTRÓNICO </label>
+                            </div>
+                            <div class="form-label-group mb-1">                             
+                                <input type="password" class="form-control" id="password" name="password" value="" placeholder="CAPTURE SU CONTRASEÑA" required=""> 
+                                <label for="lbFolio"> CONTRASEÑA </label>
+                            </div>
+                            <div class="form-label-groupmb-1 mb-2">
+                                <div class="btn-group btn-group-horizontal">
+                                   <input type="number" maxlength="4" id="txtcaptcha_captura" value="" name="captcha" class="form-control  pb-3" placeholder="Capture el Código">                                
+                                   <input type="text" id="txtcaptcha" name="txtcaptcha" readonly="true" value="1846" class="form-control  pb-3" maxlength="5">    
+                                </div>
+                                <small id="lb3" class="form-text text-muted RobotoBold" style="text-align:center;">
+                                    CAPTURE EL CÓDIGO QUE SE MUESTRA.
+                                </small>                          
+                            </div>            
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
+                                        <input type="submit" href="#" class="btn btn-success btn-block " value="INGRESAR">
+                                    </div>
+                                </div>           
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
+                                        <a href="recovery.jsp" class="pt-2 text-center RobotoBold PantoneColor7420"> RECUPERAR CONTRASEÑA </a>
+                                    </div>                            
+                                </div>       
+                                <div class="row">
+                                    <div class="col-md-12 justify-content-center pt-4 mb-3 ">
+                                            <center>
+                                                <span><a href="https://tabasco.gob.mx/aviso-de-privacidad-dtit" class="RobotoBold" target="_blank">AVISO DE PRIVACIDAD</a></span>
+                                            </center>
+                                   </div>               
+                                </div>
+                                <hr class="mb-3">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <!-- FORM LOGIN -->
+
+       
+     <!-- FOOTER -->
+     <footer class="footer">
+        <div class="d-none d-sm-none d-md-block  ">
+            <div class="footer-copyright text-center">©  2021 Copyright:
+                <a href="#" class="footer-link" > Dirección de Control Escolar e Incorporación.</a>
+            </div>        
+        </div>
+        <div class="d-lg-none ">
+            <div class="footer-copyright text-center">©  2021 Copyright:
+                <a href="#" class="footer-link"> SETAB</a>
+            </div>    
+        </div>       
+    </footer>
+    <!-- FOOTER --> 
+
+    </div>       
+</body>
+</html>

@@ -39,29 +39,50 @@
     src: local("?"), url("../fonts/Roboto/Roboto-Bold.ttf") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("opentype");
 }
 
-
+html {
+    position: relative;
+    min-height: 100vh;
+  }
+ 
 body {
-	overflow: hidden;
+	/* overflow: hidden; */
 	font-family: 'Roboto', 'Mulish', sans-serif !important;
 	font-weight: 300;
 	color: var(--primary);
 	background-image: url("../img/tramadoCtrlEsc.png");
-	background-repeat:repeat;
+    background-repeat:repeat;
+    margin-bottom: 60px /* Se deja el espacio del pie de página */
 }
 
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Se establece aquí la altura fija del pie de página */
+    line-height: 60px; /* Centrar verticalmente el texto allí */
+    background-color: #4a4a4a !important;
+    color:white;
+  }
+  
+  .footer .footer-link{
+    color: #fff;
+  }
+  
+  a:hover {
+	text-decoration: none;
+  }
+  
 .RobotoBold{
-    font-family:RobotoBold
+    font-family:RobotoBold !important;
 }
 
 .titulo_sistema {
     font-size: 26px !important;
     color: white;
-    font-family: RobotoBold;
+    font-family: RobotoBold !important;
 }
 
-a:hover {
-	text-decoration: none;
-}
+
 /*Sobrescritura de Estilos Bootstrap para cambios de color */
 .bg-primary {
 	background-color: var(--primary) !important; 
@@ -102,7 +123,6 @@ a:hover {
 	color: var(--secondaryOficial) !important;
 }
 
-
 .PantoneColor7421{
     color:#621132;
 }
@@ -125,24 +145,15 @@ a:hover {
 .PantoneColor490{
     color:#56242A !important;
 }
-.PantoneColor465{
-    color:#B38E5D !important;
-}
 
 .PantoneColor468{
     color:#D4C19C !important;
 }
 
-/*.row{
-    margin-top: 7px !important;
-}*/
-
-
 .cancelado{
     color:red !important;
     font-weight: bold;
 }
-
 
 .titulo_registro {
     color: white !important;
@@ -327,4 +338,3 @@ a:hover {
 		border:0;
 	}
 }
-
