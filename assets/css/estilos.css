@@ -344,3 +344,7 @@ body {
 		border:0;
 	}
 }
+
+card-estadist{
+    max-width: 500px !important;
+}
